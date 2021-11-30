@@ -28,6 +28,20 @@ public abstract class Filter
     {
         return name;
     }
+    protected void applyToPixels(OFImage image, PixelTransformation transformation)
+    {
+        int height = image.getHeight();
+        int width = image.getWidth();
+        for(int y = 0; y < height; y++){
+            for (int x = 0; x < width; x++){
+                transformation.apply(image,x,y);
+            }
+        }
+    }
+    public interface PixelTransformation{
+        void apply(OFImage image, int x, int y);
+    }
+    
     
     /**
      * Apply this filter to an image.

@@ -247,6 +247,11 @@ public class ImageViewer
         filterList.add(new LighterFilter("Lighter"));
         filterList.add(new ThresholdFilter("Threshold"));
         filterList.add(new FishEyeFilter("Fish Eye"));
+        filterList.add(new GrayScaleFilter("Grayscale"));
+        filterList.add(new BlueTintFilter("Blue Tint"));
+        filterList.add(new RedTintFilter("Red Tint"));
+        filterList.add(new GreenTintFilter("Green Tint"));
+        filterList.add(new WarholFilter("Warhol Filter"));
        
         return filterList;
     }
@@ -416,5 +421,6 @@ public class ImageViewer
         item = new JMenuItem("About ImageViewer...");
             item.addActionListener(e -> showAbout());
         menu.add(item);
+        
     }
 }
