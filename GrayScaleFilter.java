@@ -3,8 +3,8 @@ import java.awt.Color;
 /**
  * An image filter to remove color from an image.
  * 
- * @author Michael Kölling and David J. Barnes.
- * @version 1.0
+ * @author Michael Kölling and David J. Barnes and Ari Kaminski
+ * @version 4.0
  */
 public class GrayScaleFilter extends Filter
 {
